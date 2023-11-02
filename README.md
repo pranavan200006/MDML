@@ -55,7 +55,7 @@ Steps to Use the Product
 
 First you need to clone this repo, you can do this using
 
-`git clone https://github.com/Kiinitix/Malware-Detection-using-Machine-learning.git`
+`https://github.com/pranavan200006/MDML.git`
 
 After clone this repo, open the terminal in that location and install all the dependencies of the project using,
 
