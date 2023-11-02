@@ -83,5 +83,9 @@ After pushing the changes you are now good to send the pull request and after ev
 * Malicious File Detection
 * Malicious URL Detection
 
+# some Intresting facts about Malware
+
+Trojan is a malware which masks as another software. Trojan is from the infamous Greek Trojan Horse used to infiltrate and defeat Troy. Like virus and worms, Trojan is equally destructive which displaying annoying pop ups, and opens backdoor for other malware to access to. Yet, worms and (some) virus replicates but not Trojan. When Trojan infects other devices, it becomes a virus
+
 Thank for your Reading....
 
