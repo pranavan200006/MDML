@@ -16,6 +16,13 @@ As previously mentioned, signature-based malware detectors are capable of detect
 
 PE Header: https://www.kaggle.com/datasets/dscclass/malware
 
+# Functional Requirements
 
+Modules used (while installation):
+
+* sklearn 0.24.1
+* pyfiglet 0.8.post1
+* pefile
+* joblib 1.1.0
 
 
