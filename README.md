@@ -25,4 +25,54 @@ Modules used (while installation):
 * pefile
 * joblib 1.1.0
 
+#Malicious URL Detection
+
+This part of the program also consists of two phases, Cleaning the data for the Logistic Regression and then training the machine to identify if it is malicious or not. The Model is sketched out in such a way that it can meaningfully understand the data from which it has to be trained upon and tried to develop a defined behaviour from the data-sets. Data-sets are the backbone of any model and hence it should be adequate and precise data for good as well as bad URLs present in the data for the model to be trained upon. The Machine Learning for the malicious website detection will first involve in cleaning of our data within the data-sets. We used pandas and defined our own vectorizer to clear the data-sets and then used Logistic Regression to train our model.
+
+Since the URLs are different from our normal text documents, a sanitization method is used to get the relevant data from raw URLs.
+
+We will implement our sanitization function in python to filter the URLs. This will give us the desired URL data-set values to train the model and test it. The data-set will have two column structure one for URLs and other for labels (malicious or not).
+
+Then we used Tf-idf machine learning text feature extraction approach from the sklearn python module. Before that we need to read the data-sets into data frames and matrix which can be understood by the vectorizer we prepared and later pass onto the term-frequency and inverse document frequency text extraction approach. We used pandas module in python for that task. As stated above we used logistic regression method to train our model but before that we passed the data to our custom vectorizer function using Tf-idf approach and after that we can train and test our ML model.
+
+Still the model was not able to predict all the good URLs and hence club good URLs with bad URLs so we used the classical method of URL filtering with conjunction to the machine learning model i.e., Whitelist Filter. It is the list of websites that we know are good and at-least non-malicious and won’t harm our users. So, we allow these particular websites through our internet traffic, the opposite is called as blacklisting. It’s a very simple but efficient approach to segregate our network traffic, similarly we implemented that in our machine learning model.
+
+#Performance Analysis
+
+* The Accuracy percentage of Random Forest Classifier: 99.37%
+* The Accuracy of Logistic Regression: 98.46%
+* The Precision of Logistic Regression: 99.18%
+* The Recall of Logistic Regression: 96.25%
+
+#Future Enhancement
+
+* Use a wider, well-labelled dataset.
+* Instead of only hosting it in our local system, we can upload it in the web and provide the feature of uploading files to be checked and also create a section for URL detector.
+* GUI based program can be made for windows, as of now it is only made for terminal.
+* Real time scanning of every file while downloading/transferring can be done to be used in daily life scenario to detect malicious files.
+
+Steps to Use the Product
+
+First you need to clone this repo, you can do this using
+
+`git clone https://github.com/Kiinitix/Malware-Detection-using-Machine-learning.git`
+
+After clone this repo, open the terminal in that location and install all the dependencies of the project using,
+
+`pip install -r requirement.text`
+
+Now you can use the project in your local machine, if you wish to make any changes in the repo then you first need to make a new branch and switch to that new branch using
+
+`git branch new-branch`
+`git checkout new-branch`
+After changing your current branch, make change locally and then add all those changes in your branch and then fianlly commit
+
+git add .
+git commit -m "<comment>"
+After successfully commiting the changes you need to push the code using,
+
+`git push --set-upstream origin new-branch`
+After pushing the changes you are now good to send the pull request and after evaluation we can commit it in the main-branch.
+
+
 
