@@ -74,5 +74,14 @@ After successfully commiting the changes you need to push the code using,
 `git push --set-upstream origin new-branch`
 After pushing the changes you are now good to send the pull request and after evaluation we can commit it in the main-branch.
 
+# To start the Tool
 
+`Python3 main.py` then you can run the tool
+
+# Product Features
+
+* Malicious File Detection
+* Malicious URL Detection
+
+Thank for your Reading....
 
